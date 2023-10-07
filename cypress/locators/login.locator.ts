@@ -14,4 +14,12 @@ export class LoginLocator {
   get daftarLink() {
     return cy.get("b.text-danger");
   }
+
+  get loginAlert() {
+    return cy.get("div[role='alert']");
+  }
+
+  get emailAlert() {
+    return cy.get("span[role='alert']");
+  }
 }

@@ -1,0 +1,21 @@
+{
+  "name": "sandbox-oexpress",
+  "version": "1.0.0",
+  "description": "api and ui test with cypress",
+  "repository": "git@github.com:nosebane/sandbox-oexpress.git",
+  "author": "ikhsandwidanu <ikhsan.dwi.danu@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.2.0",
+    "cypress-mochawesome-reporter": "^3.6.0",
+    "prettier": "3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "test:headed": "npx cypress run --browser chrome --headed",
+    "test": "npx cypress run --browser chrome"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

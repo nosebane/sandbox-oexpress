@@ -22,8 +22,8 @@ describe("Login Page", function () {
 
   it("invalid email format have alert", function () {
     loginPage.inputText(loginLocator.emailField, "invalid.com");
-    loginPage.validateAlertTextContain(loginLocator.emailAlert, "email harus email valid");
     loginPage.validateElmentDisabled(loginLocator.masukButton);
+    loginPage.validateAlertTextContain(loginLocator.emailAlert, "email harus valid");
   });
 
   it("password less than 6 character have alert", function () {

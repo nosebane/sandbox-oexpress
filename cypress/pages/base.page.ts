@@ -14,4 +14,10 @@ export class BasePage {
   validateElmentDisabled(locator: Cypress.Chainable<JQuery<HTMLElement>>) {
     locator.should("be.disabled");
   }
+
+  generateNameTimestamp(prefix: string): string {
+    const timestamp = new Date().getTime(); // Get current timestamp in milliseconds
+    const name = `${prefix}_${timestamp}`;
+    return name;
+  }
 }

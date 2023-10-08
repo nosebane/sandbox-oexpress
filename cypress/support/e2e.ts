@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // ***********************************************************
 // This example support/e2e.ts is processed and
 // loaded automatically before your test files.

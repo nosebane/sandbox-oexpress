@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/triple-slash-reference */
 // @ts-check
 /// <reference path="index.d.ts" />
 // ***********************************************

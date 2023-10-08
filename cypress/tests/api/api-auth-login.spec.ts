@@ -1,5 +1,3 @@
-const apiLogin = `${Cypress.env("apiUrl")}/auth/member/login`;
-
 describe("Auth Login API", function () {
   context("POST /auth/member/login", function () {
     it("user login success", function () {

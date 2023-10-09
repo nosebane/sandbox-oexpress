@@ -10,8 +10,4 @@ export class LoginPage extends BasePage {
     loginLocator.masukButton.should("be.enabled");
     loginLocator.masukButton.click();
   }
-
-  validateUrlContain(url: string) {
-    cy.url().should("include", url);
-  }
 }

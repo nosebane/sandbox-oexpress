@@ -3,6 +3,10 @@ export class BasePage {
     cy.visit("/");
   }
 
+  validateUrlContain(url: string) {
+    cy.url().should("include", url);
+  }
+
   inputText(locator: Cypress.Chainable<JQuery<HTMLElement>>, text: string) {
     locator.clear({ force: true }).type(text);
   }

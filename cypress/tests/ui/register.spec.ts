@@ -10,6 +10,10 @@ describe("Register Regular Page", function () {
     loginLocator.daftarLink.click();
   });
 
+  it("have correct url", function () {
+    registerPage.validateUrlContain("/register");
+  });
+
   it("register is success", function () {
     registerPage.register();
     registerPage.validateEmailVerification("We've send an email verification to");

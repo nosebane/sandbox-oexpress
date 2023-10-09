@@ -4,9 +4,11 @@ describe("Auth Login API", function () {
   let apiToken = "";
 
   before(function () {
-    cy.loginByApi().then((response) => {
-      return (apiToken = response.body.data.access_token);
-    });
+    cy.loginByApi(Cypress.env("registered_email"), Cypress.env("registered_password")).then(
+      (response) => {
+        return (apiToken = response.body.data.access_token);
+      }
+    );
   });
 
   context("GET /auth/member/me", function () {

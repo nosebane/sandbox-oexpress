@@ -38,19 +38,16 @@
 //   }
 // }
 
-Cypress.Commands.add(
-  "loginByApi",
-  (email = Cypress.env("registered_email"), password = Cypress.env("registered_password")) => {
-    return cy.request({
-      method: "POST",
-      url: `${Cypress.env("apiUrl")}/auth/member/login`,
-      headers: {
-        "x-api-key": Cypress.env("x_api_key"),
-      },
-      body: {
-        email: email,
-        password: password,
-      },
-    });
-  }
-);
+Cypress.Commands.add("loginByApi", (email: string, password: string) => {
+  return cy.request({
+    method: "POST",
+    url: `${Cypress.env("apiUrl")}/auth/member/login`,
+    headers: {
+      "x-api-key": Cypress.env("x_api_key"),
+    },
+    body: {
+      email: email,
+      password: password,
+    },
+  });
+});

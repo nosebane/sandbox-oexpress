@@ -15,6 +15,10 @@ export class LoginLocator {
     return cy.get("b.text-danger");
   }
 
+  get lupaPasswordLink() {
+    return cy.get(".float-end");
+  }
+
   get loginAlert() {
     return cy.get("div[role='alert']");
   }

@@ -3,6 +3,6 @@
 
 declare namespace Cypress {
   interface Chainable {
-    loginByApi(username?: string, password?: string): Chainable<Response<any>>;
+    loginByApi(username: string, password: string): Chainable<Response<any>>;
   }
 }

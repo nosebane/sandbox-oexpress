@@ -16,14 +16,14 @@ describe("Login Page", function () {
   });
 
   it("login can be success", function () {
-    loginPage.login("ebizuone@gmail.com", "P@ssw0rd123");
+    loginPage.login(Cypress.env("registered_email"), Cypress.env("registered_password"));
     homePage.validateLoginSuccessByUserName("ebizu");
   });
 
   it("invalid email format have alert", function () {
     loginPage.inputText(loginLocator.emailField, "invalid.com");
     loginPage.validateElmentDisabled(loginLocator.masukButton);
-    loginPage.validateAlertTextContain(loginLocator.emailAlert, "email harus valid");
+    loginPage.validateAlertTextContain(loginLocator.emailAlert, "email harus email valid");
   });
 
   it("password less than 6 character have alert", function () {

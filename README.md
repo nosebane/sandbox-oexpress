@@ -51,10 +51,11 @@ yarn test:headed
 | Get Profile Info | GET | /auth/member/me | Response Code 200 and have data |
 
 ## Screenshots
+With example of failed test
 
-- Test Execution
-![Image1](https://drive.google.com/file/d/1rHVPJ9zO8beW_4uuEZBNd5K0eZzVzJgi/view?usp=sharing)
+-- Test Execution
+- https://drive.google.com/file/d/1rHVPJ9zO8beW_4uuEZBNd5K0eZzVzJgi/view?usp=sharing
 
-- Reports
-![Image2](https://drive.google.com/file/d/1t4HabLvbqPKcRrljY8VhQOlsw-2tu38N/view?usp=sharing)
-![Image3](https://drive.google.com/file/d/1kkfO3n-UM2oaC182eKbbp0bGjYuhR243/view?usp=sharing)
+-- Reports
+- https://drive.google.com/file/d/1t4HabLvbqPKcRrljY8VhQOlsw-2tu38N/view?usp=sharing
+- https://drive.google.com/file/d/1kkfO3n-UM2oaC182eKbbp0bGjYuhR243/view?usp=sharing
